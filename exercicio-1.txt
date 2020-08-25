@@ -1,0 +1,22 @@
+Informe o propósito e os efeitos de cada um dos comandos git listados abaixo:
+
+-git init: cria ou inicia um repositorio a partit de um diretorio com dados, ele basicamente selecionar os modelos recém-adicionados (ou mover o repositório para outro local.
+ 
+-git clone: Clona um repositório em um diretório recém-criado, cria branches de rastreamento remoto para cada branch no repositório clonado e cria e faz check-out de um branch inicial que é fork do branch atualmente ativo do repositório clonado.
+
+-git branch: Listar todas as branches do repositorio, tbm pode ser usado para criar ou excluir branches.
+
+-git checkout: alterar para uma branche especifica ou restaura arquivos de árvore de trabalho
+
+-git fetch: buscar alterações mais recentes da branch atual armazenadas no repositorio remoto
+
+-git pull: buscar as alteraçoes do repositorio remoto e incorporá-las(merge) ao repositorio local
+-git add: adicionar todas as mudanças do executadas nos arquivos do diretorio
+-git commit: "empacotar" todas as mudanças feitas no repertorio em um commit, e adicionar o commit ao log
+-git push: Atualizar referências remotas junto com objetos associados
+
+
+Os comandos git pull e git fetch são muito parecidos, mas os resultados sobre o repositório são diferentes. Diferencie os comandos com base nos resultados produzidos por eles.
+
+R: git fatch baixa as referências (refs) com nomes ou tags de um ou mais repositórios (caso você tenha outro remote além do origin configurado), junto com os objetos necessários para completá-los. Basicamente ele atualiza as referências locais com relações às remotas, mas não faz o merge com o branch local o git pull incorpora mudanças de um repositório remoto para o branch local. É equivalente a git fetch seguido de git merge FETCH_HEAD
+
